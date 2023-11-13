@@ -7,7 +7,7 @@ export const Nombre = () => {
         <h1>Proyecto terpel</h1>
         <h2>Terpel</h2>
         <h1>Hola</h1>
-        <h1>Pepito</h1>
+        <h1>hola soy DIana</h1>
     </div>
       
     
