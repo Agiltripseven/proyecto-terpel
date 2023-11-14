@@ -26,11 +26,11 @@
       font-family: system-ui;
       text-align: start;
       color: #3b3b3b;
-      width: 100%;
       max-width: 1280px;
       font-weight: 700;
       margin-bottom: 40px;
       background-color: transparent;
+      margin-left: 7.5rem;
     }
     
     .slider {

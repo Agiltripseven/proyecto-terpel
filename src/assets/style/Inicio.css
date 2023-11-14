@@ -1,14 +1,6 @@
-* {
-    background-color: #dedddd;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui;
-  }
-  
+
   #root {
-    max-width: 1280px;
-    padding-left: 200px;
+   
     box-sizing: border-box;
     font-family: system-ui;
   
@@ -27,12 +19,13 @@
     height: 100vh;
     flex-direction: column;
     padding-top: 30px;
+    padding-left: 200px;
    
   }
   
   .logo_newspaper {
-    width: 3%;
-    height: 3%;
+    width: 5%;
+    height: 5%;
     padding-right: 10px;
   
   }
@@ -265,7 +258,7 @@
     height: 75vh;
     flex-direction: column;
     padding-top: 30px;
-   
+    padding-inline: 150px;
   }
   
   /* ----------------------- */
