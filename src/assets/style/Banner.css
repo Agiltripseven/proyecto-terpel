@@ -18,8 +18,7 @@
   hr {
       border: 2px solid red;
       position: relative;
-      right: 180px;
-      width: 1480px;
+      width: 100%;
   }
   
   .title {

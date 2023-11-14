@@ -60,7 +60,6 @@ const Banner = () => {
         </div>
         </div>
         <hr />
-        <div className='carrousel_container'></div>
     </div>
   )
 }
