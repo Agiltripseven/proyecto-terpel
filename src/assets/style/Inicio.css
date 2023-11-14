@@ -1,0 +1,649 @@
+* {
+    background-color: #dedddd;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+  }
+  
+  #root {
+    max-width: 1280px;
+    padding-left: 200px;
+    box-sizing: border-box;
+    font-family: system-ui;
+  
+  }
+  
+  :root {
+    --red: #DF1A09;
+    --yellow: #FFB900;
+    --gray: #888;
+    --white: #fff;
+    --black: #000;
+  }
+  .container {
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 30px;
+   
+  }
+  
+  .logo_newspaper {
+    width: 3%;
+    height: 3%;
+    padding-right: 10px;
+  
+  }
+  .title-sub  {
+    text-align: center;
+    width: 100%;
+    color: #484848;
+  }
+  .subtitle {
+    border-bottom: 1px solid black;
+    text-align: start;
+    font-size: 30px;
+    width: 800px;
+  }
+  
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #171616;
+  }
+  
+  /* banner */
+  
+  .banner
+  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo_arrow {
+    width: 15%;
+    height: 15%;
+    margin-top: 5px;
+    background: none;
+  }
+  
+  .navigation
+  {
+    display: flex;
+  }
+  .navigation li 
+  {
+    list-style: none;
+  }
+  .navigation li a 
+  {
+    position: relative;
+    color: rgb(10, 9, 9);
+    text-decoration: none;
+    margin-left: 40px;
+  }
+  .content
+  {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content .text
+  {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+   
+  }
+  .content .text h2
+  {
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .content .text h2 span
+  {
+    font-weight: 700;
+    
+  }
+  .content .text p 
+  {
+    color: rgb(12, 11, 11);
+    font-weight: 200;
+    font-size: 2.1em;
+    margin-top: 0;
+    padding-right: 100px;
+  }
+  .btn
+  {
+    position: relative;
+    top: 20px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0px;
+    background: var(--red);
+    color: var(--white);
+    font-size: 1.6em;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+    width: 160px;
+      transition: .5s, color .10s;
+          -webkit-transition: .5s, color .10s;
+          -moz-transition: .5s, color .10s;
+  }
+  .btn:hover 
+  {
+    transform: scale3d(1.5, 1.5, 0.3);
+          -webkit-transform: scale3d(1.1, 1.1, 0.3);
+          -moz-transform: scale3d(1.5, 1.5, 0.3);
+  }
+  .slider
+  {
+    position: relative;
+  }
+  .slider .slides 
+  {
+    display: none;
+  }
+  .slider .slides.active
+  {
+    display: block;
+  }
+  .slider .slides img 
+  {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 3%;
+    box-shadow: 0 1px 10px var(--red);
+    margin-top: 40px;
+    position: relative;
+    z-index: 4;
+  }
+  
+  /* ----------------Gazel-------------- */
+  
+  .slider .slides .img_gazel 
+  {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 3%;
+    box-shadow: 0 1px 10px rgb(0, 0, 240);
+    margin-top: 40px;
+    position: relative;
+    z-index: 4;
+  }
+  
+  .btn_gazel
+  {
+    position: relative;
+    top: 20px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0px;
+    background: rgb(0, 0, 240);
+    color: var(--white);
+    font-size: 1.6em;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+    width: 160px;
+      transition: .5s, color .10s;
+          -webkit-transition: .5s, color .10s;
+          -moz-transition: .5s, color .10s;
+  }
+  
+  .btn_gazel:hover 
+  {
+    transform: scale3d(1.5, 1.5, 0.3);
+          -webkit-transform: scale3d(1.1, 1.1, 0.3);
+          -moz-transform: scale3d(1.5, 1.5, 0.3);
+  }
+  
+  .content .text_gazel
+  {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    padding-left: 100px;
+    background-color: var(--white);
+    border-radius: 10px;
+  }
+  
+  .content .text_gazel h2
+  {
+    color: blue;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0;
+    background-color: var(--white);
+    border-radius: 10px;
+  }
+  
+  .content .text_gazel p 
+  {
+    color: rgb(12, 11, 11);
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 0;
+    padding-right: 10px;
+    background-color: var(--white);
+  }
+  
+  .container_gazel {
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+    flex-direction: column;
+    padding-top: 30px;
+   
+  }
+  
+  /* ----------------------- */
+  
+  .sci 
+  {
+    display: flex;
+  }
+  .sci li
+  {
+    list-style: none;
+  }
+  .sci li a 
+  {
+    color: #fff;
+    font-size: 2em;
+    margin-right: 20px;
+    display: inline-block;
+    transition: 0.25s;
+  }
+  .sci li a:hover 
+  {
+    transform: translateY(-5px);
+  }
+  .prevNext 
+  {
+    position: relative;
+    user-select: none;
+  }
+  .prevNext p 
+  {
+    position: relative;
+    color: #fff;
+    text-align: end;
+    margin-bottom: 15px;
+  }
+  .prevNext p::before 
+  {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 2px;
+    background: #fff;
+  }
+  .prevNext span
+  {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-size: 2em;
+    color: #fff;
+  }
+  .prevNext span:nth-child(2)
+  {
+    margin-right: 20px;
+  }
+  
+  /* now, make it responsive */
+  @media (max-width:991px)
+  {
+    .banner
+    {
+      padding: 40px;
+    
+    }
+    header
+    {
+      padding: 20px 40px;
+    }
+    .logo
+    {
+      max-width: 70px;
+    }
+    .content
+    {
+      flex-direction: column;
+      margin: 120px 0 40px;
+    }
+    .content .text
+    {
+      max-width: 100%;
+    }
+    .content .text h2
+    {
+      font-size: 4em;
+    }
+    .slider
+    {
+      margin-top: 40px;
+     
+    }
+    .slider .slides img
+    {
+      width: 100%;
+      max-width: 420px;
+      position: absolute;
+      z-index: 2;
+    }
+  
+    .navigation
+    {
+      display: none;
+    }
+    .navigation.active
+    {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #d10a20;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .navigation li a
+    {
+      font-size: 1.5em;
+      margin: 10px 0;
+      display: inline-block;
+    }
+    .toggle
+    {
+      position: relative;
+      width: 32px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100000;
+      cursor: pointer;
+    }
+    .toggle.active 
+    {
+      position: fixed;
+      right: 40px;
+    }
+    .toggle::before
+    {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      transform: translateY(-10px);
+      box-shadow: 0 10px 0 #fff;
+      transition: 0.25s;
+    }
+    .toggle.active::before
+    {
+      transform: translateY(0px) rotate(45deg);
+      box-shadow: 0 0 0 #fff;
+    }
+    .toggle::after
+    {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      transform: translateY(10px);
+      transition: 0.25s;
+    }
+    .toggle.active::after
+    {
+      transform: translateY(0px) rotate(-45deg);
+    }
+  }
+  
+  @media (max-width:480px)
+  {
+    header,
+    .banner
+    {
+      padding: 20px;
+    }
+    .toggle.active 
+    {
+      right: 20px;
+    }
+    .content .text h2
+    {
+      font-size: 3em;
+    }
+    .btn 
+    {
+      padding: 15px 30px;
+    }
+    .sci
+    {
+      margin-top: 40px;
+    }
+  }
+  
+  /* figuras */
+  
+  .figura1 {
+    width: 280px;
+    height: 420px;
+    background-color: rgba(209, 209, 36, 0.587);
+    border-radius: 50% / 50% 10% 50% 40%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    z-index: 1;
+  }
+  
+  .figura2 {
+    width: 300px;
+    height: 520px;
+    background-color: rgba(231, 23, 23, 0.845);
+    border-radius: 80% 30% 90% 50% / 50% 50% 90% 50% ;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    right: 180px; 
+    top: 50px;
+    
+  }
+  .figura3 {
+    width: 280px;
+    height: 420px;
+    background-color: rgba(209, 209, 36, 0.587);
+    border-radius: 50% / 50% 10% 50% 40%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: 1400px;
+    left: 0; 
+    z-index: 2;
+  }
+  
+  .figura4 {
+    width: 300px;
+    height: 520px;
+    background-color: rgba(231, 23, 23, 0.845);
+    border-radius: 80% 30% 90% 50% / 50% 50% 90% 50% ;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    left: 20px; 
+    top: 1620px;
+    z-index: 1;
+  }
+  
+  
+  
+  
+  /* ----parallax ----*/
+  
+  
+  .parallax {
+    position: relative;
+    z-index: 4;
+    margin: 0;
+    font-family: "Euclid Circular A";
+    color: #1d1d1d;
+    background: rgb(255, 255, 0));
+      background: -webkit-linear-gradient(to right, rgb(255, 255, 0), red+);
+      background: linear-gradient(to right, rgb(255, 255, 0), red);
+    overflow-x: hidden;
+  }
+  
+  .p_parallax,
+  .h2_parallax {
+    position: relative;
+    z-index: 1;
+    margin: 20px 15%;
+    background-color: rgb(255, 255, 255);
+  }
+  .h2_parallax {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  
+  .p_parallax  {
+    opacity: 0.8;
+  }
+  
+  .p_parallax strong {
+    background-color: rgb(255, 255, 255);
+    font-weight: 800;
+    color: var(--red);
+  }
+  .text_parallax1 {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .image {
+    height: 380px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("https://www.terpel.com/var/site/storage/images/4/7/6/7/67674-1-esl-CO/96b55aab8b44-Bannerweb55An-osTerpel_V2-1-1-.png");
+  }
+  
+  .text_parallax {
+    position: relative;
+  }
+  
+  .text_parallax::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 125%;
+    background-color: rgb(255, 255, 255);
+    rotate: -3deg;
+    translate: -50% -50%;
+  }
+  
+  /* -------------carrousel infinito---------- */
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+  
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+    background-color: white;  
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.384));
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.461));
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+    background-color: white;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+    background-color: white;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+    background-color: white;
+  }
