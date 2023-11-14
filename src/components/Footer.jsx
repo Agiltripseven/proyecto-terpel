@@ -1,14 +1,8 @@
 import React from 'react'
 import '../assets/style/Footer.css'
 import terpe from '../assets/img/terpel.webp'
-import facebook from '../assets/img/facebook.png'
-import instagram from '../assets/img/instagram.png'
-import youtube from '../assets/img/youtube.png'
-import twitter from '../assets/img/twitter.png'
-import linkedin from '../assets/img/linkedin.png'
-import ubicacion from '../assets/img/ubicacion.png'
-import mensaje from '../assets/img/mensaje.png'
-import llamada from '../assets/img/llamada.png'
+
+
 
 const Footer = () => {
   return (
@@ -17,23 +11,20 @@ const Footer = () => {
     <div class="content">
      
         <section class="logito">
-          <img src={terpe} alt="" />    
+          <img src={terpe} alt=""/>    
         </section>
         <section className='redes'>
           <a href="https://www.facebook.com/Terpel">
-            <img src={facebook} alt="" />
+          <i class='bx bxl-facebook'></i>
           </a>
           <a href="https://twitter.com/TerpelCol">
-            <img src={twitter} alt="" />
+          <i class='bx bxl-twitter' ></i>
           </a>
           <a href="https://www.instagram.com/terpelcol/">
-            <img src={instagram} alt="" />
+          <i class='bx bxl-instagram' ></i>
           </a>
           <a href="https://www.youtube.com/user/TerpelColombia">
-            <img src={youtube} alt="" />
-          </a>
-          <a href="https://www.linkedin.com/company/terpel/?originalSubdomain=co">
-            <img src={linkedin} alt="" />
+            <i class='bx bxl-youtube' ></i>
           </a>
         </section>
         <section className='ayuda'>
@@ -63,27 +54,23 @@ const Footer = () => {
         <h4>CONTACTO</h4>
           <div className='llama'>
           
-            <img src={llamada} alt="" />
+          <i class='bx bxs-phone'></i>
             <p>01 8000 518 555 O #462</p>
           </div>
           <div className='ubi'>
-           <img src={ubicacion} alt="" />
+          <i class='bx bxs-map'></i>
            <p>oficina corporativa <br />PBX (571) 326 78 79 FAX 376 97 21 <br />
            Cr 7 No. 75 - 51 Bogota - Colombia</p>
           </div>
           <div className='mensa'>
-          <img src={mensaje} alt="" />
+          <i class='bx bx-support'></i>
             <p>Servicioalcliente@terpel.com</p>
           </div>
         </section>
     </div>
     <div class="bottom-details">
       <div class="bottom_text">
-        <span class="copyright_text">Copyright © 2023 <a href="#">Company name</a>All rights reserved</span>
-        <span class="policy_terms">
-          <a href="#">Privacy policy</a>
-          <a href="#">Terms & condition</a>
-        </span>
+        <span class="copyright_text">Copyright © 2023 Terpel todos los derechos reservados</span>
       </div>
     </div>
 </footer>
