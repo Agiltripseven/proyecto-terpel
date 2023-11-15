@@ -139,9 +139,7 @@ function Registro(){
         setErrorInicio("La CC debe tener entre 8 y 10 digitos y no llevar ningun caracter especial ")
       }
   }
-const mostrarInicio =()=>{
-    
-}
+
    
 return(
     <> 
@@ -214,8 +212,9 @@ return(
       onChange={cambioContraseñaInicio}/>
 
       <button type="submit" >Iniciar sesion</button>
-      <p>No tienes una cuenta? <a href="" onClick={mostrarInicio}>Registrarse</a></p>
       {errorInicio && <p>{errorInicio} </p>}
+      
+      
     </form> ):
      null}
    
