@@ -1,4 +1,4 @@
-# Equipo GiltripSeven
+# Equipo AgilTripSeven
 
 Integrantes:
 
