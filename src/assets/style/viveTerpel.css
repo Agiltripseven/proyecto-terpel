@@ -1,0 +1,165 @@
+/*Encabezado de pagina*/ 
+body {
+  background-color: white;
+
+}
+
+.headerViveTerpel {
+  display: flex;
+  justify-content: space-around;
+} 
+.headerViveTerpel div{
+  display: flex;
+  align-items: center;
+}
+.headerViveTerpel img{
+  width: 220px
+}
+.headerViveTerpel a{
+ display: flex;
+ font-size: 17px;
+ text-decoration: none;
+ margin-left:25px;
+} 
+.headerViveTerpel a:hover{
+  color: rgb(228, 6, 6);
+}
+.headerViveTerpel div button{ 
+  background-color: white;
+  border:rgb(228, 6, 6) solid 1px ;
+  border-radius: 10px;
+  padding: 10px;
+  width: 155px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 10px;
+  color: rgb(228, 6, 6);
+}
+.headerViveTerpel div button:hover{
+  color: darkblue;
+  border: darkblue solid 1px;
+}
+
+.conocenos{
+  color:  rgb(228, 6, 6);
+  border: red;
+  border-radius: 5px;
+  background-color: rgb(240, 222, 222);
+  padding: 8px;
+  font-size: 15px;
+}
+.edsParticipantesBoton{
+  color: rgb(228, 6, 6);
+  border: rgb(228, 6, 6) 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.edsParticipantesBoton:hover{
+  color: darkblue;
+  border: darkblue 1px solid;
+}
+.mainViveTerpel  h1{
+  color: rgb(228, 6, 6);
+  font-size: 40px;
+}
+.mainViveTerpel p {
+  font-size:20px ;
+}
+
+/*Secciones de articulos*/
+.principalRegistro{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 150px;
+}
+.articleViveTerpel section{
+  box-shadow: 5px 5px rgb(230, 227, 227);
+  margin: 60px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+}
+.articleViveTerpel{
+  display: flex;
+  justify-content: center;
+}
+.articleViveTerpel section:hover{
+  transform: scale(1.03);
+}
+.articleViveTerpel img {
+  width: 50px;
+}
+.articleViveTerpel h3, .articleViveTerpel p, .principalRegistro p, form p{
+  color: black;
+}
+#botonEnlace{
+  background: none;
+  border: 0;
+  color: darkblue; 
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+} 
+#botonEnlace:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*Estilos del formulario*/ 
+.registrarseFormulario, .formInicioSesion{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px rgb(221, 217, 217);
+  padding: 30px;
+ border-radius: 10px;
+ border: solid 1px gray;
+  width: 400px; 
+  margin: auto;
+}
+.registrarseFormulario h2 {
+  color:rgb(228, 6, 6);
+  font-size: 40px;
+  justify-content: center;
+  display: flex;
+  margin: 5px;
+
+} 
+.registrarseFormulario input , .registrarseFormulario select{
+  margin: 5px;
+}
+.registrarseFormulario label, .formInicioSesion label{
+  color:rgb(4, 4, 95);
+}
+.registrarseFormulario button, .formInicioSesion button{
+  border-radius: 5px;
+  border: rgb(228, 6, 6) 1px solid; 
+  background-color:  rgb(204, 7, 7);
+  height: 40px;
+  color: white;
+}
+.formInicioSesion {
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: column;
+}
+.formInicioSesion input, .formInicioSesion select{
+  width: 350px;
+  margin: 10px;
+}
+.formInicioSesion h2{
+  color:  rgb(228, 6, 6);
+
+} 
+.formInicioSesion button {
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+
+

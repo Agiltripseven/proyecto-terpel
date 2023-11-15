@@ -9,4 +9,4 @@ const Prueba = () => {
   )
 }
 
-export default Prueba
+export default Prueba 

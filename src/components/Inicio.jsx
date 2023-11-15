@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import '../assets/style/Inicio.css'
 import newspaper from '../assets/img/newspaper.svg'
@@ -26,16 +26,20 @@ import estaciones from '../assets/img/estaciones.png'
 import puntos from '../assets/img/puntos.jpg'
 import voltex from '../assets/img/voltex.jpg'
 import Alpine from 'alpinejs'
- 
+import  './InterfazViveTerpel'
+import { Link } from 'react-router-dom'
+
 window.Alpine = Alpine
  
 Alpine.start()
 
 
 const Inicio = () => {
+
   return (
     <>
-        <main className='container'>
+
+    <main className='container'> 
         <div className='title-sub'>
           <h1>Noticias</h1>
           <div className='subtitle'>
@@ -84,7 +88,8 @@ const Inicio = () => {
             </div>
             </div>
             <div class="slider__item">
-            <img class="slider__image" src={puntos} alt="Image"/>
+            
+            <Link to="/interfaz"><img class="slider__image" src={puntos} alt="Image" /></Link>
             <div class="slider__infoCuatro">
                 <h2>+2 m inscritos vive terpel</h2>
             
@@ -174,10 +179,9 @@ const Inicio = () => {
       <img src={aliado10}/> 
       </div>
     </div>
-      
-    
+  
     </>
-  )
+  ); 
 }
 
 export default Inicio
