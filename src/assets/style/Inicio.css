@@ -527,8 +527,8 @@
     margin: 0;
     font-family: "Euclid Circular A";
     color: #1d1d1d;
-    background: rgb(255, 255, 0));
-      background: -webkit-linear-gradient(to right, rgb(255, 255, 0), red+);
+    background: rgb(255, 255, 0);
+      background: -webkit-linear-gradient(to right, rgb(255, 255, 0), red);
       background: linear-gradient(to right, rgb(255, 255, 0), red);
     overflow-x: hidden;
   }
