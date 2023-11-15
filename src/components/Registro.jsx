@@ -124,7 +124,7 @@ function Registro(){
            if( cedula==cedulaInicio  ){
             if(contraseña==contraseñaInicio){
               setMostrarContenido(true); 
-              setClickInicio(false)
+              setErrorInicio("Sesion iniciada");
             }else{
               setErrorInicio("La contraseña es incorrecta")
             }
@@ -218,18 +218,11 @@ return(
       {errorInicio && <p>{errorInicio} </p>}
     </form> ):
      null}
-   {mostrarContenido==true ? <ContenidoPagina/>: null}
+   
 
     </>
 );
 }
-//Muestra contenido inicio de sesion 
-  function ContenidoPagina (){
-     return(
-      <>
-          <h3>Sesion iniciada</h3>
-      </>
-     ); 
- } 
+
   
 export default Registro; 

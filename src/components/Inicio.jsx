@@ -84,7 +84,7 @@ const Inicio = () => {
             <div class="slider__infoDos">
                 <h2>+15 Electrolineras</h2>
             </div>
-            </div>
+            </div> 
             <div class="slider__item">
             <img class="slider__image" src={estaciones} alt="Image"/>
             <div class="slider__infoTres">
@@ -97,7 +97,6 @@ const Inicio = () => {
             <div class="slider__infoCuatro">
                 <h2>+2 m inscritos vive terpel</h2>
               
-                
             </div>
             </div>
             <div class="slider__item">
