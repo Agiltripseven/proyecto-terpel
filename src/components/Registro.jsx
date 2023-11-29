@@ -1,6 +1,6 @@
 import { useState } from "react";
 import '../assets/style/viveTerpel.css'
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 import "./InicioSesion";
 //Validaciones de campos de registro
 const validarCedula=(cedula)=>{
@@ -46,6 +46,7 @@ function Registro(){
     const [clickRegistro, setClickRegistro]=useState(true); 
     const [clickInicio, setClickInicio]=useState(false); 
     const [siValida, setSiValida]=useState(false) 
+    const navigate=useNavigate(); 
 
      //Cambios con estados
 
@@ -125,8 +126,7 @@ function Registro(){
            setContraseñaInicio(contraseñaInicio);
            if( cedula==cedulaInicio  ){
             if(contraseña==contraseñaInicio){
-              setMostrarContenido(true); 
-              setError( "Sesion iniciada")
+              navigate("/inicio")
     
             }else{
               setErrorInicio("La contraseña es incorrecta")
@@ -194,9 +194,6 @@ return(
           
     </form> ):null}
 
-    {mostrarContenido ? 
-    (<Link to="/inicio"></Link>
-    ): (
       {clickInicio==true ?
         ( 
    <form onSubmit={ValidacionDeCamposInicio} className="formInicioSesion"  > 
@@ -223,8 +220,7 @@ return(
     </form>
    ):null}
    
-    )}
-   
+    
     </>
 );
 }
