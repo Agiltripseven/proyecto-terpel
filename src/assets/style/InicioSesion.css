@@ -1,0 +1,161 @@
+h1,p,a{
+    color: black;
+}
+ header{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 0px;
+}
+header a{
+   text-decoration: none;
+    margin-right: 70px;
+}
+header button{
+    width: 95px;
+    height: 40px;
+    border: red solid 1px;
+    border-radius: 10px;
+    color: red;
+    font-size: 15px;
+}
+header button img{
+    width: 15px;
+    margin-left: 10px;
+}
+header a:hover{
+    color: red;
+}
+header button:hover{
+    transform: scale(1.07);
+}
+header img {
+    width: 260px;
+    
+}
+aside{
+    margin: 100px;
+}
+aside:hover{
+    transform: scale(1.02);
+}
+.asideContenido{
+    background-color: rgb(211, 209, 209);
+    padding: 20px;
+    border-radius: 15px;
+    color: red;
+}
+.asideContenido img{
+    width:20px ;
+    height: 20px;
+}
+.menu p:hover{
+    color: red;
+}
+.monedas, .monedas div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu div{
+    display: flex;
+    justify-content:flex-start;
+    margin: 15px;
+}
+aside{
+    border-radius: 15px;
+    width: 40%;
+    padding: 30px;
+    margin-top: 5px;
+    background-color: rgb(245, 240, 234);
+}
+span{
+    color: rgb(255, 0, 0);
+}
+.menu img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contenidoCompleto{
+    display: flex;
+    justify-content: space-evenly;
+}
+article{
+    display: flex;
+    width: 98%;
+    background-color: rgb(245, 240, 234) ;
+    height: 20%;
+    padding: 30px;
+    border-radius: 15px;
+}
+article img{   
+    width: 50px;                                                            
+}
+article h3{
+    color: rgb(10, 201, 10);
+}
+article h2{
+    color: red;
+    font-size: 19px;
+}
+.acomulacion div, .redencion div{
+    display: flex;
+}
+.acomulacion span{
+    color: rgb(10, 201, 10);
+}
+.acomulacion{
+    border-right: 1px solid rgb(165, 163, 163);
+    margin-right: 10px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+main img{
+    width: 110%;
+}
+main p{
+    font-size: 13px;
+}
+.parteUnoMain{
+    display: flex;
+}
+main section {
+    padding: 30px;
+    width: 100%;
+    box-shadow: 5px 5px 5px 5px rgb(211, 209, 209);
+    margin: 10px;
+}
+main section:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-out;
+
+}
+.puntosSeccion{
+    display: flex;
+}
+.puntosSeccion img{
+    width: 15%;
+}
+main button{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+main button:hover{
+    background-color: rgb(233, 9, 9);
+    border: 1px solid rgb(151, 6, 6);
+    color: white;
+}
+
+
+

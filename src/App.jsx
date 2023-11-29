@@ -4,11 +4,8 @@ import Inicio from './components/Inicio'
 import InterfazViveTerpel from './components/InterfazViveTerpel'
 import Nav from './components/Nav'
 import { HashRouter,Routes,Route } from 'react-router-dom' 
-
-
-
+import InicioSesion from './components/InicioSesion'
 import Prueba from './components/Prueba'
-
 
 
 const App = () => {
@@ -21,7 +18,8 @@ const App = () => {
         <Routes>
         <Route path="/" element={<Inicio/>}/>
         <Route  path='/interfaz' element={<InterfazViveTerpel/>}/>
-        <Route path="*" element={<p>Not found</p>}/>
+        <Route path="*" element={<p>Not found</p>}/> 
+        <Route path="/inicio" element={<InicioSesion/>}/> 
         </Routes>
        </HashRouter>
        <Footer/>

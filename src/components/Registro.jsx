@@ -1,5 +1,7 @@
 import { useState } from "react";
 import '../assets/style/viveTerpel.css'
+import { Link ,useNavigate} from "react-router-dom";
+import "./InicioSesion";
 //Validaciones de campos de registro
 const validarCedula=(cedula)=>{
   const cedulaRegex = /^\d{8,10}$/; 
@@ -29,7 +31,7 @@ function Registro(){
   
     const [tipoDeDocumento, setTipoDeDocumento] = useState(" "); 
     const [cedula, setCedula] = useState("");
-    const [nombre, setNombre] = useState("");
+     const [nombre, setNombre] = useState("");
     const [apellido, setApellido] = useState("");
     const [celular, setCelular] = useState("");
     const [correo, setCorreo] = useState("");
@@ -44,6 +46,7 @@ function Registro(){
     const [clickRegistro, setClickRegistro]=useState(true); 
     const [clickInicio, setClickInicio]=useState(false); 
     const [siValida, setSiValida]=useState(false) 
+    const navigate=useNavigate(); 
 
      //Cambios con estados
 
@@ -97,7 +100,7 @@ function Registro(){
             setError("El correo debe tener un @ seguido de al menos un carácter alfanumérico y un punto seguido de al menos dos caracteres alfabéticos al final");
           } 
         } else {
-          setError("la contraseña debe tener al menos 8 caracteres, una mayúscula, una minúscula, un número y un símbolo")
+          setError("La contraseña debe tener al menos 8 caracteres, una mayúscula, una minúscula, un número y un símbolo")
         }
       } else {
         setError("La CC debe tener entre 8 y 10 digitos y no llevar ningun caracter especial ");
@@ -123,8 +126,8 @@ function Registro(){
            setContraseñaInicio(contraseñaInicio);
            if( cedula==cedulaInicio  ){
             if(contraseña==contraseñaInicio){
-              setMostrarContenido(true); 
-              setErrorInicio("Sesion iniciada");
+              navigate("/inicio")
+    
             }else{
               setErrorInicio("La contraseña es incorrecta")
             }
@@ -190,9 +193,9 @@ return(
             >Iniciar sesion</button></p>
           
     </form> ):null}
-{clickInicio==true ?
-   ( 
-   
+
+      {clickInicio==true ?
+        ( 
    <form onSubmit={ValidacionDeCamposInicio} className="formInicioSesion"  > 
       <h2>Inicio de sesion</h2> 
       <label htmlFor="TipocedulaInicio">Tipo de cedula</label>
@@ -211,14 +214,13 @@ return(
       value={contraseñaInicio}
       onChange={cambioContraseñaInicio}/>
 
-      <button type="submit" >Iniciar sesion</button>
-      {errorInicio && <p>{errorInicio} </p>}
-      
-      
-    </form> ):
-     null}
-   
+     <button type="submit">Iniciar sesion</button> 
 
+      {errorInicio && <p>{errorInicio} </p>}
+    </form>
+   ):null}
+   
+    
     </>
 );
 }
