@@ -1,5 +1,6 @@
 import '../assets/style/viveTerpel.css'
 import Registro from './Registro';
+import { Link, Element } from 'react-scroll';
 function InterfazViveTerpel (){
 return(
 <>
@@ -7,8 +8,22 @@ return(
       <img src="src\assets\img\logoViveTerpel.png" alt="LogoVIveTerpel" className='logoViveTerpel' />
     <div>
       
-      <button>Iniciar sesion</button>
-      <button >Registrarse</button>
+    <Link   activeClass="active" 
+            className="botones"
+            to="Registrarse" 
+            spy={true} 
+            smooth={true} 
+            offset={-120} 
+            duration={500} >Iniciar Sesión
+    </Link>
+      <Link   activeClass="active" 
+                className="botones"
+                        to="Registrarse" 
+                        spy={true} 
+                        smooth={true} 
+                        offset={-120} 
+                        duration={500} >Registrarse
+                </Link>
       </div>
     </header> 
      
@@ -45,8 +60,10 @@ return(
         <p>Por ser parte de ViveTerpel disfrutas de promociones únicas, descuentos increíbles y beneficios exclusivos.</p>
       </section>
       </div>
-     </article> 
+     </article>
+    <Element name='Registrarse'>
      <Registro/>
+     </Element>
 
 </>
 ); 

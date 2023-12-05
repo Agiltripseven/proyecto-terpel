@@ -24,7 +24,7 @@ body {
 .headerViveTerpel a:hover{
   color: rgb(228, 6, 6);
 }
-.headerViveTerpel div button{ 
+.botones{ 
   background-color: white;
   border:rgb(228, 6, 6) solid 1px ;
   border-radius: 10px;
@@ -116,7 +116,7 @@ body {
   box-shadow: 10px 10px rgb(221, 217, 217);
   padding: 30px;
  border-radius: 10px;
- border: solid 1px gray;
+ border: solid 1px red;
   width: 400px; 
   margin: auto;
 }
@@ -130,9 +130,10 @@ body {
 } 
 .registrarseFormulario input , .registrarseFormulario select{
   margin: 5px;
+  border: red solid 1px;
 }
 .registrarseFormulario label, .formInicioSesion label{
-  color:rgb(4, 4, 95);
+  color:red;
 }
 .registrarseFormulario button, .formInicioSesion button{
   border-radius: 5px;
@@ -159,6 +160,9 @@ body {
   padding: 10px;
   border-radius: 10px;
   
+}
+#select{
+  border: red 1px solid;
 }
 
 
